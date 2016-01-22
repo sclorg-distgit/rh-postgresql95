@@ -1,5 +1,5 @@
 # Define SCL name
-%{!?scl_name_prefix: %global scl_name_prefix sclo-}
+%{!?scl_name_prefix: %global scl_name_prefix rh-}
 %{!?scl_name_base: %global scl_name_base postgresql}
 %{!?version_major: %global version_major 9}
 %{!?version_minor: %global version_minor 5}
