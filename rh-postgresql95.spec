@@ -19,8 +19,8 @@
 
 Summary: Package that installs %{scl}
 Name: %{scl}
-Version: 2.0
-Release: 10%{?dist}
+Version: 2.2
+Release: 2%{?dist}
 License: GPLv2+
 Group: Applications/File
 Source0: README
@@ -152,7 +152,6 @@ restorecon -R %{_localstatedir} >/dev/null 2>&1 || :
 %endif
 %doc README LICENSE
 %{?scl_files}
-%{_mandir}/man7/%{?scl_name}.*
 
 %files build
 %doc LICENSE
@@ -163,8 +162,11 @@ restorecon -R %{_localstatedir} >/dev/null 2>&1 || :
 %{_root_sysconfdir}/rpm/macros.%{scl_name_base}-scldevel
 
 %changelog
-* Mon Jan 18 2016 Pavel Kajaba <pkajaba@redhat.com> - 2.0-10
-- Changed version 9.5
+* Thu Feb 11 2016 Honza Horak <hhorak@redhat.com> - 2.2-2
+- Rebuild with newer scl-utils
+
+* Fri Jan 29 2016 Pavel Kajaba <pkajaba@redhat.com> - 2.2-1
+- Release bump
 
 * Fri Mar 20 2015 Pavel Raiskup <praiskup@redhat.com> - 2.0-9
 - move the postgresql-ctl context definition to main package
